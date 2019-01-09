@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:background="@drawable/custom_info_bubble"
+    android:orientation="vertical">
+
+    <!--<TextView-->
+    <!--android:id="@+id/title"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:background="@drawable/custom_info_bubble"-->
+    <!--android:text="南昌航空大学"-->
+    <!--android:ellipsize="end"-->
+    <!--android:textColor="#ff7f7f7f"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:textSize="12dp" />-->
+
+    <com.heaven.wing.util.MarqueeText
+        android:id="@+id/title"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusableInTouchMode="true"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:focusable="true"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="南昌航空大学">
+    </com.heaven.wing.util.MarqueeText>
+
+
+
+</LinearLayout>

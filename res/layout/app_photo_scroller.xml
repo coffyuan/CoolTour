@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <com.heaven.wing.util.RecyclerBanner
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:id="@+id/scroller_photo"/>
+    </FrameLayout>
+</ScrollView>

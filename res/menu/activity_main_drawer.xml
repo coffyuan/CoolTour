@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <group android:id="@+id/g1">
+            <item
+                android:id="@+id/nav_journey"
+                android:icon="@drawable/ic_menu_journey"
+                android:title="新的旅程" />
+        </group>
+
+        <group android:id="@+id/g2">
+            <item
+                android:id="@+id/nav_note"
+                android:icon="@drawable/ic_assignment_black_24dp"
+                android:title="我的游记" />
+        </group>
+        <group android:id="@+id/g3">
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/ic_person_black_24dp"
+                android:title="个人信息" />
+        </group>
+        <group android:id="@+id/g4">
+            <item
+                android:id="@+id/nav_setter"
+                android:icon="@drawable/ic_menu_setting"
+                android:title="设置" />
+        </group>
+        <item android:title="Account">
+            <menu>
+                <group android:id="@+id/g5">
+                    <item
+                        android:id="@+id/nav_share"
+                        android:icon="@drawable/ic_people_black_24dp"
+                        android:title="切换账号" />
+                </group>
+
+                <group android:id="@+id/g6">
+                    <item
+                        android:id="@+id/nav_send"
+                        android:icon="@drawable/ic_keyboard_tab_black_24dp"
+                        android:title="注销" />
+                </group>
+            </menu>
+        </item>
+</menu>

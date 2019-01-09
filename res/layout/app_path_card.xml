@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/path_card"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:clickable="true"
+    android:focusable="true"
+    tools:targetApi="lollipop"
+    android:foreground="?attr/selectableItemBackground"
+    card_view:cardElevation="8dp"
+    card_view:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/path_photo_"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:scaleType="centerCrop"
+                android:layout_weight="2.20" />
+
+            <ImageView
+                android:id="@+id/check_box"
+                android:src="@mipmap/ic_uncheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+
+    <com.heaven.wing.util.MarqueeText
+        android:id="@+id/path_title"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="1"
+        android:focusableInTouchMode="true"
+        android:scrollHorizontally="true"
+       android:singleLine="true"
+        android:focusable="true"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.heaven.wing.activity.NoteActivity">
+
+    <include layout="@layout/app_toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/activity_note"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:text="标题："
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/titleTV" />
+
+        <EditText
+            android:id="@+id/titleET"
+            android:background="@drawable/textview_border"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="29dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/titleTV"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/timeTV"
+            android:text="时间："
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:layout_below="@+id/titleET"
+            android:layout_toStartOf="@+id/titleET" />
+
+        <EditText
+            android:id="@+id/timeET"
+            android:background="@drawable/textview_border"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="29dp"
+            android:layout_alignBottom="@+id/timeTV"
+            android:layout_alignStart="@+id/titleET" />
+
+        <ScrollView
+            android:id="@+id/scroller"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/timeET"
+            android:layout_marginEnd="29dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/timeTV">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_border"
+                android:layout_marginTop="19dp"
+                android:id="@+id/contentET"
+                />
+        </ScrollView>
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
