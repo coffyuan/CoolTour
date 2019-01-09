@@ -10,11 +10,4 @@ Android Studio 2.2 + Android 7.0 + Bmob云数据库 + Amap高德地图api<br>
 还有一些第三方UI组件，在代码里有说明<br>
 程序要跑起来需要了解Bmob与高德地图相关知识，改写秘钥
 ### 软件截图 ###
-![启动界面](https://github.com/coffyuan/CoolTour/raw/master/image/1.png)
-![注册界面](https://github.com/coffyuan/CoolTour/raw/master/image/2.png)
-![登录界面](https://github.com/coffyuan/CoolTour/raw/master/image/3.png)
-![](https://github.com/coffyuan/CoolTour/raw/master/image/8.png)
-![](https://github.com/coffyuan/CoolTour/raw/master/image/4.png)
-![](https://github.com/coffyuan/CoolTour/raw/master/image/5.png)
-![](https://github.com/coffyuan/CoolTour/raw/master/image/6.png)
-![](https://github.com/coffyuan/CoolTour/raw/master/image/7.png)
+<img src="https://github.com/coffyuan/CoolTour/raw/master/image/1.png" alt="Sample"  width="250" height="140">
